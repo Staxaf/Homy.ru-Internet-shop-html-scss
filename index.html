@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="container">
+                <ul class="main-nav__menu">
+                    <a href="#">
+                        <li>Каталог</li>
+                    </a>
+                    <a href="#">
+                        <li>О компании</li>
+                    </a>
+                    <a href="#">
+                        <li>Оплата и доставка</li>
+                    </a>
+                    <a href="#">
+                        <li>Гарантия и возврат</li>
+                    </a>
+                    <a href="#">
+                        <li>Сотрудничество</li>
+                    </a>
+                    <a href="#">
+                        <li>Услуги</li>
+                    </a>
+                    <a href="#">
+                        <li>Решения</li>
+                    </a>
+                    <a href="#">
+                        <li>Техподдержка</li>
+                    </a>
+                    <a href="#">
+                        <li>Контакты</li>
+                    </a>
+                </ul>
+                <div class="main-menu__burger">
+                    <label for="hmt">
+                        <span class="menu-nav__button-burger"></span>
+                    </label>
+                    <p>Меню</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sign-row">
+                <div class="sign-row__region">
+                    <p>Ваш регион: <a class="direct-link" href="#">Москва</a></p>
+                </div>
+                <div class="sign-row__login">
+                    <a class="direct-link" href="#">Войти</a>
+                    <a class="direct-link" href="#">Личный кабинет</a>
+                </div>
+            </div>
+            <div class="header__nav">
+                    <div class="header__logo">
+                        <h1 class="logo">ho<span>my</span>ru</h1>
+                        <p>Оборудование и решения для VoIP</p>
+                    </div>
+                    <div class="header__cloud">
+                        <span class="direct-link">Обратный </br>звонок</span>
+                    </div>
+                    <div class="header__contacts">
+                        <p class="header__phone">+7 495 2-55-44-66</p>
+                        <p>(пн-пт с 9 до 18 ч)</p>
+                        <div class="header__icons">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.222in" height="0.222in">
+                           <image  x="0px" y="0px" width="16px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACmlBMVEXX8NnI68uc2qKU2JvB6MTP7dLK683C6MXc8d3U7tbU7Nev4LbS69WBzI2t37ST25mB14mE14px1Xtm03Bl0m9w1HiC14uC14qM2JKZ2Z+K2JBi0Wxh0myD14uR2JjP7NF1035v0nnH6svF6cih4KeZ3qC85sGk3qlTymBSy1+c3KKM2JSA1YlfzGtZymZJxFlJxFhEwlREw1VPxF9Jw1p2zoJoynWw37Y5vEwntz2p3bDZ7NtmyHR3z4TV7Ni74sFUwmVPwGCz4bqo3LAvt0VCu1UttkMktDpZwmmEzo+237x1yIJrxnhkxHOAy4tRvmI2t0sqtEA0uElOvmB7y4eP0JhY0WNa0WZc0mhX0WRMzFlLy1hTzWBa0Gdaz2Zaz2dbz2ZYz2RQzV1IyVRZzmWT3pt11n9SzGBWzWNWzWRXzWRWzmNLzFlGx1Se4KX//v/S79VWzGNOylxSy2BTy2BUzGE7xExWy2TR8NT////+/v9+1olHxlZNyVxOyV1PyV1RyV5Ex1M+xE9Px17I7c7z+vVzz39DxFRKx1lLx1pKx1pExFQ7wEyY3aHG6stEwlRBw1BHxVZGxVZExFVFxVVGxFZFxFVCwlM5wEtJw1nL7c+G15E2vkg9wU87wE08wE1Bw1JBwlI5vks/wFEvu0JeyGzi9eSN2Zc7v05NxV2u5LaO2ZhGw1g7v0wsukE7vk06vkwpuDxkynLc8+DC6sjA6MZBwFMnuDwyukU3u0k1vEkktjpPw2G35b2z4rkyuEYltjoyukcyuUYyukYjtTkrt0FZxGmQ1pqq37GU1p1Au1IZsTAgtDYotj4rtkAuuEMuuEQntj0esjYisjgptD4gsTYUrywotD4gsjcmtD0qtj8qtkAktDobsTQVvf9UAAAAVnRSTlMAAAAAAAAAAAAAAAAAAAABJG+00tK2dCgCCm/q8HcMCJSdCgF1gQEo8PUufo/F0OLj4+TM1IuaMu/9OgWilgMKsrUULOnI8v6UFyBTIRA2lM/k0Zg7B9C5b1sAAAABYktHRHmh3NTQAAAAB3RJTUUH5AMGDiQtnWNG4QAAARtJREFUGNMBEAHv/gAAAQIPEBESExQVFhcYAwQFAAAGGRobVldYWFdZHB0eBwUACB8gWltcXV5eX2BhYiEiCQAjJGNkZWZnaGlqa2pobCUmACcobW5vcHFyc3RndHVyKSoAK3Z3eHl6e3x9fn5+f4CBLAAtgoOEeYWGh4iJiomKinwuAC+LjI15jo+QkZKTlJKVljAAMZeYmZp5m5yMnZ2en6ChMgAzoqOkpaZ5p6ipqqusnq00ADWur7CxsrN5mrR5ebW2tzYANzi4ubq7vL2FeXl5vr85OgA7PMDBwsPExcbHyMnKyz0+AD9AzM3Oz9DR0tPU1dZBQgoAQ9dERUbY2drb3N1HSEkLDABKS0xNTk9QUVFSU1RVDQ4MKx9uqQwjmGwAAAAASUVORK5CYII=" />
+                           </svg>
+                           <svg 
+                           xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink"
+                           width="0.222in" height="0.25in">
+                          <image  x="0px" y="0px" width="16px" height="18px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAMAAABl5a5YAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACoFBMVEXu6PLYzOG9qM3l3uvv6fLm3+vSxd3PwNnZzePRxNzQwdrWyt/Xy+HWy+Hf1ueznMadf7XOvtjVyN7c0+Xd1OXk3OqDXqKLZ6iRbayaerOkh7uxmsXYzuLYzeLo4+60nseDXaGRcK2rkcCVcq6HYqaAWKB9VJ5+VZ6AV5+KZaeXdrGqkL+LZ6jTxd2GYKWBWaG5pMrl2+uPbKyIYqXd0+W1nsiwl8SVdLCPbKqGX6SDXaJ/Vp+AVp99VJ1/VZ99U52AWKGBWKCEXaOQbqyTcq6zm8avl8O/q86OaqqMZ6m4o8nHttWHYqV1SZh2SpiLZ6jFs9KYeLGwlsR/Vp6HZKaIY6aLZaePa6qYd7Knjb6df7XQwduHYaWpj76FYaSMaKiSbq2bfLSmibzHt9Wrj7+qkb/a0OTHttWkibvp4+91SZhzR5d3TJl7UJt8U519VJ55T5t2Sph3TJpwQ5SAV5+Sb619VZ5zRpaSbqy4oMmvl8SRb616T5t1SJdwRJR/V5/JuNf7+fyznMZuQJJ/Vp+fgbexmcXDr9Glibx6UJtzR5ZxRJWYd7L////z7/ZvQZOfgri6pMuvlsPCrtF6Tpp1SpiKZajw6vT49vmtlMFpOo+zm8a6o8y1nce2n8h/VZ55Tpp2S5m5ocvRw9x4TZqWdbGqkMCtlMLArdCHYqZ6UJyIYqXw6/Pd0eZ8U5yLZ6irkL+JZKd7UZxzSJeqjr+7psxsPZBtP5F1SZdsPpF8UZx+VJ53S5nBrtH+/f6/qs6FXqOwmMTRxN2ihLlyRZZ5TZp5T5p1Spe8p8z9/f7t5/H49vry7vWulMN7UZ2hhLnf1efEstNwQpNxRZZ8Upx4TZlyRpWBWaGqj7/WyuHLu9iIY6Z6UZtxRJR7UZt2S5hdg46ZAAAAanRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOSI7A2eLg1b2NSw8rv804EcfYGFxpp7DQ1d/g5OPk3dnRtLJkZBTIyRQqsv7+rSkVcO69wLWbbDYUR+ROFBQSDQNWZwIBR4IEw8Vr2wAAAAFiS0dEjRsM4tUAAAAHdElNRQfkAwYOJSD6yQsdAAABPUlEQVQY0wEyAc3+AAABISIjJCUmJygpKissAgMABC0uamtsbW5vcHFxci8wBQAxMnN0dXZ3eHl6e3xwfTM0ADV+f4CBgoOEhYaHiG2JijYAN4uMjY2OjI+QkZKTjJRxOAA5lZaXjZiZmnubnJ2en2w6ADugoaKNo2yki6Wmp6ippDwAPaqVq6yta4pubK6vsLFwPgA/snyztI21tre4bLm6u3xAAEF8snK8vb6/wMHCw8TFxkIAQ6GyusdsyMnKy43MzXx9RABFi86ysmpqz9CNjY3RcNJGAEdI06qy1NXW19jZ2tuPSUoABktMTdyyxqGL3d6kTk9QBwAICVFSpN9TVFVWV1hZWgoLAAwNDlvSXF1eX2BhYg8QERIAExQVY3JkZRYXGBkaGxAREgAcHWZnaGkeHyAYGRobEBESVbB/thfk5ucAAAAASUVORK5CYII=" />
+                          </svg>
+                          <p>+7 903 111-11-11</p>
+                        </div>
+                        <a class="direct-link" href="#">info@homy.ru</a>
+                    </div>
+                    <div class="header__loupe"><svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="0.319in" height="0.306in">
+                       <path fill-rule="evenodd"  fill="rgb(255, 88, 22)"
+                        d="M21.690,20.037 L16.260,14.592 C17.656,12.992 18.421,10.979 18.421,8.882 C18.421,3.984 14.289,-0.000 9.210,-0.000 C4.130,-0.000 -0.002,3.984 -0.002,8.882 C-0.002,13.780 4.130,17.765 9.210,17.765 C11.116,17.765 12.934,17.210 14.487,16.157 L19.959,21.644 C20.187,21.873 20.495,21.999 20.825,21.999 C21.137,21.999 21.432,21.885 21.657,21.676 C22.135,21.233 22.150,20.498 21.690,20.037 ZM9.210,2.317 C12.964,2.317 16.018,5.262 16.018,8.882 C16.018,12.502 12.964,15.447 9.210,15.447 C5.455,15.447 2.401,12.502 2.401,8.882 C2.401,5.262 5.455,2.317 9.210,2.317 Z"/>
+                       </svg>
+                        
+                    </div>
+                    <div class="header__search">
+                        
+                        <div class="header__title">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.347in" height="0.347in">
+                           <path fill-rule="evenodd"  fill="rgb(68, 86, 103)"
+                            d="M21.339,21.339 C19.076,23.601 15.951,25.000 12.500,25.000 C9.048,25.000 5.923,23.601 3.661,21.339 C1.400,19.077 -0.000,15.952 -0.000,12.500 C-0.000,9.048 1.399,5.923 3.661,3.661 C5.922,1.400 9.047,-0.000 12.500,-0.000 C15.951,-0.000 19.076,1.399 21.339,3.662 C23.600,5.923 25.000,9.048 25.000,12.500 C25.000,15.952 23.601,19.077 21.339,21.339 ZM20.786,4.213 C18.665,2.093 15.735,0.781 12.500,0.781 C9.264,0.781 6.334,2.093 4.214,4.213 C2.093,6.334 0.781,9.264 0.781,12.500 C0.781,15.735 2.093,18.666 4.213,20.786 C6.333,22.906 9.264,24.218 12.499,24.218 C15.735,24.218 18.664,22.906 20.785,20.786 C22.906,18.666 24.218,15.736 24.218,12.500 C24.218,9.264 22.906,6.334 20.786,4.213 ZM16.159,13.034 C15.523,13.670 14.643,14.064 13.672,14.064 C13.672,14.064 13.672,14.063 13.672,14.063 C13.671,14.063 13.671,14.064 13.671,14.064 L10.937,14.064 L10.937,14.845 L14.454,14.845 C14.669,14.845 14.844,15.020 14.844,15.236 C14.844,15.451 14.669,15.626 14.454,15.626 L10.937,15.626 L10.937,17.969 L12.110,17.969 C12.325,17.969 12.500,18.144 12.500,18.360 C12.500,18.576 12.325,18.751 12.110,18.751 L8.985,18.751 C8.769,18.751 8.594,18.576 8.594,18.360 C8.594,18.144 8.769,17.969 8.985,17.969 L10.156,17.969 L10.156,15.626 L8.984,15.626 C8.768,15.626 8.593,15.451 8.593,15.236 C8.593,15.020 8.768,14.845 8.984,14.845 L10.156,14.845 L10.156,14.064 L8.984,14.064 C8.768,14.064 8.593,13.889 8.593,13.673 C8.593,13.457 8.768,13.282 8.984,13.282 L10.156,13.282 L10.156,7.813 L8.985,7.813 C8.769,7.813 8.594,7.638 8.594,7.422 C8.594,7.206 8.769,7.031 8.985,7.031 L13.672,7.031 C14.629,7.031 15.498,7.416 16.133,8.039 L16.159,8.062 C16.794,8.698 17.189,9.577 17.189,10.548 C17.189,11.504 16.805,12.373 16.182,13.008 L16.159,13.034 ZM15.606,8.615 L15.586,8.593 C15.093,8.111 14.418,7.813 13.672,7.813 L10.937,7.813 L10.937,13.282 L13.671,13.282 C13.671,13.282 13.671,13.283 13.672,13.283 C13.672,13.283 13.672,13.282 13.672,13.282 C14.427,13.282 15.111,12.977 15.606,12.482 L15.628,12.461 C16.109,11.970 16.408,11.294 16.408,10.549 C16.408,9.794 16.101,9.109 15.606,8.615 Z"/>
+                           </svg>
+                            <div class="header__text">
+                                <p class="text-orange">voip решения</p>
+                                <p>Для экономных людей</p>
+                            </div>
+                        </div>
+                        <div class="header__input">
+                            <input type="text" placeholder="Поиск по сайту">
+                            <button class="search">искать</button>
+                        </div>
+                    </div>
+                    <div class="header__basket">
+                        <div class="header__basket-info">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="0.361in" height="0.306in">
+                           <path fill-rule="evenodd"  fill="rgb(255, 88, 22)"
+                            d="M25.231,8.358 L22.636,15.993 C22.636,15.993 22.424,17.127 21.327,17.127 L8.234,17.127 C6.929,17.127 6.873,15.703 6.873,15.703 L5.232,3.501 L1.017,2.436 C0.383,2.276 -0.000,1.636 0.162,1.008 C0.324,0.379 0.969,0.000 1.603,0.160 L6.600,1.423 C7.071,1.542 7.421,1.935 7.483,2.413 L8.233,8.460 L9.019,14.667 L20.864,14.667 L21.480,12.610 L11.551,12.606 C11.009,12.606 10.569,12.171 10.569,11.634 C10.569,11.097 11.009,10.662 11.551,10.662 L22.062,10.660 L22.717,8.461 L12.379,8.462 C11.795,8.462 11.321,7.992 11.321,7.413 C11.321,6.835 11.795,6.365 12.379,6.365 L24.064,6.366 C26.000,6.366 25.231,8.358 25.231,8.358 ZM9.559,17.821 C10.724,17.821 11.668,18.756 11.668,19.910 C11.668,21.065 10.724,22.000 9.559,22.000 C8.394,22.000 7.449,21.065 7.449,19.910 C7.449,18.756 8.394,17.821 9.559,17.821 ZM18.765,17.821 C19.930,17.821 20.875,18.756 20.875,19.910 C20.875,21.065 19.930,22.000 18.765,22.000 C17.600,22.000 16.655,21.065 16.655,19.910 C16.655,18.756 17.600,17.821 18.765,17.821 Z"/>
+                           </svg>
+                            <div class="header__count">
+                                <p>
+                                    <span class="count-items direct-link">
+                                        4
+                                    </span>/4000р.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header__favorite">
+                            <div class="header__favorite-item">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.208in" height="0.181in">
+                               <path fill-rule="evenodd"  fill="rgb(198, 81, 122)"
+                                d="M12.809,0.529 C12.202,0.193 11.505,-0.000 10.763,-0.000 C9.451,-0.000 8.277,0.600 7.501,1.542 C6.722,0.600 5.549,-0.000 4.236,-0.000 C3.495,-0.000 2.799,0.193 2.191,0.529 C0.885,1.256 0.000,2.654 0.000,4.260 C0.000,4.719 0.075,5.160 0.209,5.573 C0.936,8.858 7.501,13.000 7.501,13.000 C7.501,13.000 14.062,8.858 14.790,5.573 C14.925,5.160 15.000,4.719 15.000,4.260 C15.000,2.654 14.115,1.257 12.809,0.529 Z"/>
+                               </svg>
+                                <p>Избранное <span class="favorite">7</span></p>
+                            </div>
+                            <div class="header__favorite-item">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.208in" height="0.278in">
+                               <path fill-rule="evenodd"  fill="rgb(73, 156, 84)"
+                                d="M0.117,10.698 C0.000,9.643 0.097,8.625 0.362,7.685 C1.242,4.558 4.001,2.259 7.274,2.218 L7.274,0.174 C7.274,0.061 7.411,0.000 7.500,0.069 L11.536,3.159 C11.602,3.212 11.602,3.317 11.536,3.366 L7.504,6.456 C7.411,6.525 7.278,6.464 7.278,6.350 L7.278,4.311 C5.126,4.347 3.289,5.730 2.499,7.685 C2.199,8.423 2.047,9.238 2.090,10.093 C2.148,11.269 2.573,12.352 3.242,13.228 C3.600,13.694 3.515,14.375 3.051,14.728 C2.612,15.065 1.997,14.972 1.658,14.526 C0.829,13.447 0.276,12.133 0.117,10.698 ZM11.770,6.772 C12.443,7.644 12.867,8.731 12.922,9.907 C12.964,10.767 12.809,11.582 12.513,12.315 C11.723,14.270 9.886,15.657 7.734,15.689 L7.734,13.650 C7.734,13.536 7.597,13.476 7.508,13.545 L3.472,16.634 C3.406,16.687 3.406,16.793 3.472,16.841 L7.504,19.931 C7.597,20.000 7.730,19.939 7.730,19.826 L7.730,17.782 C11.003,17.745 13.766,15.446 14.642,12.315 C14.907,11.375 15.000,10.357 14.887,9.303 C14.731,7.867 14.179,6.553 13.350,5.475 C13.007,5.029 12.396,4.935 11.956,5.272 C11.497,5.625 11.412,6.306 11.770,6.772 Z"/>
+                               </svg>
+                               <p>Сравнение <span class="comparison">2</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <section>
+        <div class="container">
+            <ul class="themes">
+                <a class="themes__item" href="#">
+                    <li>voip оборудование</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Skype оборудование</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>gsm оборудвание</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Видео-оборудование</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Радио и dect телефоны</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Гарнитуры</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Электронные замки</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Домофонные системы</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>системы записи телефонных разговоров</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li>Сетевое оборудвание</li>
+                </a>
+                <a class="themes__item" href="#">
+                    <li><svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="0.083in" height="0.125in">
+                       <image  x="0px" y="0px" width="6px" height="9px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJCAQAAAC7k5UWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAwYRCQN25fWMAAAAL0lEQVQI10WNQQIAQAgBR///sz3IdjMJMhgBwGDAhVwd4FD78Z1mNCfbtrm07c4DKNMLDg8TF4QAAAAASUVORK5CYII=" />
+                       </svg></li>
+                </a>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="news">
+                <div class="news__content">
+                    <div class="news__title">
+                        <h2>Новости компании</h2>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item__img">
+                            <img src="img/news1.jpg" alt="">
+                            <div class="news__subtitle">
+                                <p class="news__number">15</p>
+                                <p>октября</p>
+                            </div>
+                        </div>
+                        <div class="news__text">
+                            <a href="#">Новинка от «Элтекс» - точка доступа WEP-2ac</a>
+                            <p>Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.</p>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item__img">
+                            <img src="img/news2.jpg" alt="">
+                            <div class="news__subtitle">
+                                <p class="news__number">07</p>
+                                <p>октября</p>
+                            </div>
+                        </div>
+                        <div class="news__text">
+                            <a href="#">Новинка от компании Grandstream!</a>
+                            <p>Скоро в продаже мощный маршрутизатор GWN7000!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item__img">
+                            <img src="img/news3.jpg" alt="">
+                            <div class="news__subtitle">
+                                <p class="news__number">28</p>
+                                <p>сентября</p>
+                            </div>
+                        </div>
+                        <div class="news__text">
+                            <a href="#">WiFi точка доступа от компании Grandstream!</a>
+                            <p>Уже скоро в продаже!.</p>
+                        </div>
+                    </div>
+                    <a class="direct-link" href="#">Все новости</a>
+                </div>
+                <div class="slider">
+                    <div class="slider__title">
+                        <p>
+                            <b>Более 2000 товаров </b>
+                           от 40+ производителей в одном магазине. Любыйе решения под ключ
+                        </p>
+                    </div>
+                    <div class="slider__main">
+                        <div class="slider__caption">
+                            <h2>Революционное решение</h2>
+                            <p>На рынке среди систем вкус!</p>
+                            <p class="italic">GVC 3200 от компании Grandstream это:</p>
+                        </div>
+                        <div class="slider__list">
+                            <ul>
+                                <li>9-ти сторонняя аудио/видео конференция без покупки дополнительного ПО</li>
+                                <li>2 Мпикс камера CMOS с разрешением 1920Hx1080V@15fps</li>
+                                <li>Гигабитный порт, встроенный модуль WiFi (802.11n) и Bluetooth 4.0, Miracast</li>
+                            </ul>
+                        </div>
+                        <div class="slider__button">
+                            <button>Подробнее</button>
+                        </div>
+                        <div class="slider__arrows">
+                            <div class="prev"><svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.222in" height="0.611in">
+                               <path fill-rule="evenodd"  fill="rgb(255, 88, 22)"
+                                d="M16.000,41.944 L12.610,44.000 L0.000,22.221 L1.159,22.000 L0.000,21.779 L12.610,-0.000 L16.000,2.056 L7.006,22.000 L16.000,41.944 Z"/>
+                               </svg>
+                            </div>
+                            <div class="next"><svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="0.222in" height="0.611in">
+                               <path fill-rule="evenodd"  fill="rgb(255, 88, 22)"
+                                d="M16.000,22.221 L3.390,44.000 L0.000,41.944 L8.994,22.000 L0.000,2.056 L3.390,-0.000 L16.000,21.779 L14.841,22.000 L16.000,22.221 Z"/>
+                               </svg>
+
+                            </div>
+                        </div>
+                        <div class="slider__dots">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
