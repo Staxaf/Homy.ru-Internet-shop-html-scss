@@ -164,12 +164,19 @@ b{
 //Header
 
 .main-nav{
-    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
     padding: 15px 0;
     background: $menu-bg;
+    .menu-nav__check{
+        display: none;
+    }
     .main-menu__burger{
         display: none;
         .menu-nav__button-burger{
+            @include post-animation($duration-time);
             position: relative;
             display: block;
             width: 30px;
@@ -177,15 +184,19 @@ b{
             cursor: pointer;
             border-top: 3px solid $highlighter;
             border-bottom: 3px solid $highlighter;
-            
         }
+        
         .menu-nav__button-burger:before{
+            @include post-animation($duration-time);
             content: "";
             position: absolute;
             top: 6px;
             left: 0px;
             width: 100%;
             border-top: 3px solid $highlighter;
+        }
+        .menu-nav__button-burger:hover, .menu-nav__button-burger:hover:before{
+            border-color: white;
         }
     }
     .main-nav__menu{
@@ -202,6 +213,7 @@ b{
     }
 }
 .sign-row{
+    margin-top: 50px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -850,7 +862,6 @@ b{
 }
 // Media queries
 
-
 @media screen and (max-width: 1022px){
     .products__title{
         .direct-link{
@@ -895,7 +906,35 @@ b{
             }
         }
         .main-nav__menu{
-            display: none;
+            @include post-animation($duration-time);
+            position: fixed;
+            background: $menu-bg;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            top: -550px;
+            //top: 50px;
+            z-index: 1;
+            li{
+                @include post-animation($duration-time);
+                padding: 20px 0;
+                font-size: 15px;
+            }
+            li:hover{
+                background: $highlighter;
+            }
+        }
+    }
+    .menu-nav__check:checked ~{
+        .main-nav__menu{
+            top: 50px;
+        }
+        .main-menu__burger{
+            span, span:before{
+                border-color: white;
+            }
         }
     }
     .header__nav{
@@ -927,6 +966,7 @@ b{
             text-align: center;
         }
     }
+    
 }
 
 @media screen and (max-width: 750px){

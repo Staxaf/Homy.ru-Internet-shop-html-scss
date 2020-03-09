@@ -189,8 +189,16 @@ b {
 }
 
 .main-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
   padding: 15px 0;
   background: #040d0d;
+}
+
+.main-nav .menu-nav__check {
+  display: none;
 }
 
 .main-nav .main-menu__burger {
@@ -198,6 +206,11 @@ b {
 }
 
 .main-nav .main-menu__burger .menu-nav__button-burger {
+  -webkit-transition: 0.4s ease;
+  /* Safari and Chrome */
+  /* Firefox 4 */
+  /* Opera */
+  transition: 0.4s ease;
   position: relative;
   display: block;
   width: 30px;
@@ -208,12 +221,21 @@ b {
 }
 
 .main-nav .main-menu__burger .menu-nav__button-burger:before {
+  -webkit-transition: 0.4s ease;
+  /* Safari and Chrome */
+  /* Firefox 4 */
+  /* Opera */
+  transition: 0.4s ease;
   content: "";
   position: absolute;
   top: 6px;
   left: 0px;
   width: 100%;
   border-top: 3px solid #ff5816;
+}
+
+.main-nav .main-menu__burger .menu-nav__button-burger:hover, .main-nav .main-menu__burger .menu-nav__button-burger:hover:before {
+  border-color: white;
 }
 
 .main-nav .main-nav__menu {
@@ -236,6 +258,7 @@ b {
 }
 
 .sign-row {
+  margin-top: 50px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,7 +1208,43 @@ b {
     margin-left: 15px;
   }
   .main-nav .main-nav__menu {
-    display: none;
+    -webkit-transition: 0.4s ease;
+    /* Safari and Chrome */
+    /* Firefox 4 */
+    /* Opera */
+    transition: 0.4s ease;
+    position: fixed;
+    background: #040d0d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: -550px;
+    z-index: 1;
+  }
+  .main-nav .main-nav__menu li {
+    -webkit-transition: 0.4s ease;
+    /* Safari and Chrome */
+    /* Firefox 4 */
+    /* Opera */
+    transition: 0.4s ease;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .main-nav .main-nav__menu li:hover {
+    background: #ff5816;
+  }
+  .menu-nav__check:checked ~ .main-nav__menu {
+    top: 50px;
+  }
+  .menu-nav__check:checked ~ .main-menu__burger span, .menu-nav__check:checked ~ .main-menu__burger span:before {
+    border-color: white;
   }
   .header__nav .header__search {
     display: none;
